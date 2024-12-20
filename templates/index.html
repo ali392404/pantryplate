@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantryPlate - Search for Recipes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>PantryPlate Recipe Finder</h1>
+
+    <form action="/recipes" method="POST">
+        <label for="ingredients">Ingredients:</label>
+        <input type="text" id="ingredients" name="ingredients" placeholder="e.g., tomato, onion" required><br><br>
+
+        <label for="cuisine">Cuisine:</label>
+        <input type="text" id="cuisine" name="cuisine" placeholder="e.g., Italian"><br><br>
+
+        <label for="diet">Dietary Restrictions:</label>
+        <input type="text" id="diet" name="diet" placeholder="e.g., vegetarian"><br><br>
+
+        <button type="submit">Search Recipes</button>
+    </form>
+</body>
+</html>

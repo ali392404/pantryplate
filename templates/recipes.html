@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantryPlate - Recipe Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Recipe Results</h1>
+
+    {% if recipes %}
+        <ul>
+        {% for recipe in recipes %}
+            <li>
+                <h2>{{ recipe.title }}</h2>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No recipes found. Try adjusting your search criteria.</p>
+    {% endif %}
+
+    <a href="/">Go Back to Search</a>
+</body>
+</html>
